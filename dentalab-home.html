@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html><head>
+    <link rel="stylesheet" href="dentalab-home.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:700&amp;display=swap" rel="stylesheet">
+    
+  </head>
+  <body data-new-gr-c-s-check-loaded="14.1086.0" data-gr-ext-installed="">
+    <!-- START NAV -->
+
+    <nav id="navbar" class="nav">
+      <!--<h2 id="logo">Logo</h2>-->
+      <ul class="nav-list">
+        <li>
+          <a href="dentalab-home.html" class="home">Home</a>
+        </li>
+      <li>
+        <a href="laboratory-dashboard.html" class="about-us">About Us</a>
+      </li>
+      <li>
+        <a href="dentalab-login.html" class="log_in">Login</a>
+      </li>
+      </ul>
+    </nav>
+
+    <!-- END NAV -->
+
+    <!-- START WELCOME SECTION -->
+    <div class="bg-image"></div>
+    <div class="bg-text">
+      <h1>WELCOME TO </h1>
+      <h2>DENTALAB A.R.K.</h2>
+      <p>This web app is the best for your dental laboratory record-keeping.</p>
+    </div>
+    <!-- END WELCOME SECTION -->
+    <div class="form-box">
+        <div class="button-box">
+            <div id="btn"></div>
+            <button type="button" class="toggle-btn" onclick="login()"><strong>Dental <br> Laboratory</strong></button>
+            <button type="button" class="toggle-btn" onclick="signup()"><strong>Dentist</strong></button>
+        </div>
+        <form id="login" class="input-group" action="">
+            <input type="text" class="input-field" placeholder="Dental Laboratory Name" required>
+            <input type="email" class="input-field" placeholder="Email" required>
+            <input type="text" class="input-field" placeholder="Password" required>
+            <input type="checkbox" class="check-box"><span>I agree to the terms & conditions</span>
+            <button type="submit" class="submit-btn">Create Account</button>
+        <div class="login">
+            <p>Already have an account? <a href="dentalab-login.html">Login</a></p>
+        </div>
+        </form>
+        <form id="signup" class="input-group" action="">
+            <input type="text" class="input-field" placeholder="Dentist Name" required>
+            <input type="email" class="input-field" placeholder="Email" required>
+            <input type="text" class="input-field" placeholder="Password" required>
+            <input type="checkbox" class="check-box"><span>I agree to the terms & conditions</span>
+            <button type="submit" class="submit-btn">Create Account</button>
+        <div class="login">
+            <p>Already have an account? <a href="dentalab-login.html">Login</a></p>
+        </div>
+        </form>
+    </div>
+
+    <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("signup");
+        var z = document.getElementById("btn");
+        
+        function signup(){
+            x.style.left = "-400px";
+            y.style.left = "50px";
+            z.style.left = "110px";
+        }
+        function login(){
+            x.style.left = "50px";
+            y.style.left = "450px";
+            z.style.left = "0";
+        }
+    </script>
+  </body>
+</html>

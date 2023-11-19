@@ -1,0 +1,251 @@
+:root {
+    --main-white: #f0f0f0;
+    --main-blue:  #024579;
+    --main-gray: #303841;
+    --main-light: #D6E7EE;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+  html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+  }
+  
+  @media (max-width: 75em) {
+    html {
+      font-size: 60%;
+    }
+  }
+  
+  @media (max-width: 61.25em) {
+    html {
+      font-size: 58%;
+    }
+  }
+  
+  @media (max-width: 28.75em) {
+    html {
+      font-size: 55%;
+    }
+  }
+  
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(--main-white);
+  }
+  
+  h1,
+  h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 6rem;
+  }
+  
+  h2 {
+    font-size: 4.2rem;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: var(--main-white);
+  }
+  
+  img {
+    display: block;
+    width: 100%;
+  }
+  
+  
+  .nav {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--main-blue);
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+    z-index: 10;
+  }
+  
+  .nav-list {
+    display: flex;
+    margin-right: 2rem;
+  }
+  
+  @media (max-width: 28.75em) {
+    .nav {
+      justify-content: center;
+    }
+  
+    .nav-list {
+      margin: 0 1rem;
+    }
+  }
+  
+  .nav-list p {
+    display: block;
+    font-size: 2.2rem;
+    padding: 2rem;
+  }
+  
+  .nav-list a:hover {
+    background: var(--main-blue);
+  }
+  
+  .sidebar{
+    position: fixed;
+    left: -280px;
+    width: 280px;
+    height: 100%;
+    background: var(--main-light);
+    transition: all .5s ease;
+  }
+  .sidebar header{
+    font-size: 22px;
+    color: white;
+    text-align: center;
+    line-height: 70px;
+    background: rgb(8, 36, 95);
+    user-select: none;
+  }
+  .sidebar ul a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 20px;
+    color: var(--main-blue);
+    padding-left: 20px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(255,255,255,.1);
+    border-bottom: 1px solid black;
+    transition: .4s;
+  }
+
+  .icon-name{
+    color: var(--main-blue);
+  }
+  ul li:hover a{
+    padding-left: 50px;
+  }
+  .sidebar ul a i{
+    margin-right: 16px;
+  }
+  #check{
+    display: none;
+  }
+  label #btn{
+    position: absolute;
+    cursor: pointer;
+    background: white;
+    border-radius: 3px;
+  }
+  label #btn{
+    left: 40px;
+    top: 25px;
+    font-size: 18px;
+    color: var(--main-blue);
+    padding: 6px 9px;
+    transition: all .5s;
+  }
+  label #cancel{
+    position: absolute;
+    cursor: pointer;
+    z-index: 1111;
+    left: -195px;
+    top: 15px;
+    font-size: 17px;
+    color: white;
+    padding: 4px 5px;
+    transition: all .5s ease;
+  }
+  #check:checked ~ .sidebar{
+    left: 0;
+  }
+  #check:checked ~ label #btn{
+    left: 250px;
+    opacity: 0;
+    pointer-events: none;
+  }
+  #check:checked ~ label #cancel{
+    left: 250px;
+  }
+
+  label #transactions{
+    position: absolute;
+    cursor: pointer;
+    left: 80px;
+    top: 25px;
+    font-size: 18px;
+    color: var(--main-blue);
+    padding: 6px 9px;
+    transition: all .5s;
+    background: var(--main-light);
+    border-radius: 3px;
+  }
+  label #add-dentist{
+    position: absolute;
+    cursor: pointer;
+    left: 120px;
+    top: 25px;
+    font-size: 18px;
+    color: white;
+    padding: 6px 9px;
+    transition: all .5s;
+  }
+  label #dentist-list{
+    position: absolute;
+    cursor: pointer;
+    left: 160px;
+    top: 25px;
+    font-size: 18px;
+    color: white;
+    padding: 6px 9px;
+    transition: all .5s;
+  }
+  label #remove-dentist{
+    position: absolute;
+    cursor: pointer;
+    left: 200px;
+    top: 25px;
+    font-size: 18px;
+    color: white;
+    padding: 6px 9px;
+    transition: all .5s;
+  }
+  label #notification{
+    position: absolute;
+    cursor: pointer;
+    left: 240px;
+    top: 25px;
+    font-size: 18px;
+    color: white;
+    padding: 6px 9px;
+    transition: all .5s;
+  }
