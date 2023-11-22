@@ -197,22 +197,22 @@
     left: 250px;
   }
 
-  label #transactions{
+  label #dental-lab-list{
     position: absolute;
     cursor: pointer;
-    left: 80px;
+    left: 85px;
     top: 25px;
-    font-size: 18px;
+    font-size: 20px;
     color: white;
     padding: 6px 9px;
     transition: all .5s;
   }
-  label #add-dentist{
+  label #pickup-request{
     position: absolute;
     cursor: pointer;
     left: 120px;
     top: 25px;
-    font-size: 18px;
+    font-size: 20px;
     color: white;
     padding: 6px 9px;
     transition: all .5s;
@@ -222,7 +222,7 @@
     cursor: pointer;
     left: 160px;
     top: 25px;
-    font-size: 18px;
+    font-size: 20px;
     color: white;
     padding: 6px 9px;
     transition: all .5s;
@@ -232,7 +232,7 @@
     cursor: pointer;
     left: 200px;
     top: 25px;
-    font-size: 18px;
+    font-size: 20px;
     color: white;
     padding: 6px 9px;
     transition: all .5s;
@@ -242,7 +242,7 @@
     cursor: pointer;
     left: 240px;
     top: 25px;
-    font-size: 18px;
+    font-size: 20px;
     color: white;
     padding: 6px 9px;
     transition: all .5s;

@@ -221,7 +221,7 @@ img {
     outline: none;
     background: transparent;
 }
-.submit-btn{
+.lab-submit-btn, .dentist-submit-btn{
     width: 85%;
     padding: 10px 30px;
     cursor: pointer;
@@ -242,10 +242,10 @@ span{
     bottom: 68px;
     position: absolute;
 }
-#login{
+#laboratory_signup{
     left: 50px;
 }
-#signup{
+#dentist_signup{
     left: 450px;
 }
 .login{
@@ -254,8 +254,28 @@ span{
     text-align: center;
     padding: 10px 0;
 }
-.home, .about-us, .log_in {
+.home, .about-us, .log_in, .lab_acc, .dentist_acc, .lab-submit-btn, .dentist-submit-btn {
     color:white;
     text-decoration: none;
     color: var(--main-white);
 }
+.logo{
+  width: 48px;
+  margin-right: 10px;
+  flex: 1;
+}
+.logo a{
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  color: #fff;
+}
+.logo a a:hover{
+  color: #fff;
+}
+.logo img{
+  top: 2px;
+  width: 40px;
+  margin-right: 10px;
+}
+

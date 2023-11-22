@@ -10,13 +10,16 @@
     <!-- START NAV -->
 
     <nav id="navbar" class="nav">
+      <div class="logo"><a href="#"><img src=""alt="logo">Logo</a>
+      </div>
+    
       <!--<h2 id="logo">Logo</h2>-->
       <ul class="nav-list">
-        <li>
-          <a href="dentalab-home.html" class="home">Home</a>
-        </li>
       <li>
-        <a href="laboratory-dashboard.html" class="about-us">About Us</a>
+        <a href="dentalab-home.html" class="home">Home</a>
+      </li>
+      <li>
+        <a href="about-us.html" class="about-us">About Us</a>
       </li>
       <li>
         <a href="dentalab-login.html" class="log_in">Login</a>
@@ -37,25 +40,25 @@
     <div class="form-box">
         <div class="button-box">
             <div id="btn"></div>
-            <button type="button" class="toggle-btn" onclick="login()"><strong>Dental <br> Laboratory</strong></button>
-            <button type="button" class="toggle-btn" onclick="signup()"><strong>Dentist</strong></button>
+            <button type="button" class="toggle-btn" onclick="laboratory_signup()"><strong>Dental <br> Laboratory</strong></button>
+            <button type="button" class="toggle-btn" onclick="dentist_signup()"><strong>Dentist</strong></button>
         </div>
-        <form id="login" class="input-group" action="">
+        <form id="laboratory_signup" class="input-group" action="">
             <input type="text" class="input-field" placeholder="Dental Laboratory Name" required>
             <input type="email" class="input-field" placeholder="Email" required>
             <input type="text" class="input-field" placeholder="Password" required>
             <input type="checkbox" class="check-box"><span>I agree to the terms & conditions</span>
-            <button type="submit" class="submit-btn">Create Account</button>
+            <button type="submit" class="lab-submit-btn"><a href="Laboratory/laboratory-dashboard.html" class="lab_acc">Create Account</a></button>
         <div class="login">
             <p>Already have an account? <a href="dentalab-login.html">Login</a></p>
         </div>
         </form>
-        <form id="signup" class="input-group" action="">
+        <form id="dentist_signup" class="input-group" action="">
             <input type="text" class="input-field" placeholder="Dentist Name" required>
             <input type="email" class="input-field" placeholder="Email" required>
             <input type="text" class="input-field" placeholder="Password" required>
             <input type="checkbox" class="check-box"><span>I agree to the terms & conditions</span>
-            <button type="submit" class="submit-btn">Create Account</button>
+            <button type="submit" class="dentist-submit-btn"><a href="Dentist/dentist-dashboard.html" class="dentist_acc">Create Account</a></button>
         <div class="login">
             <p>Already have an account? <a href="dentalab-login.html">Login</a></p>
         </div>
@@ -63,16 +66,16 @@
     </div>
 
     <script>
-        var x = document.getElementById("login");
-        var y = document.getElementById("signup");
+        var x = document.getElementById("laboratory_signup");
+        var y = document.getElementById("dentist_signup");
         var z = document.getElementById("btn");
         
-        function signup(){
+        function dentist_signup(){
             x.style.left = "-400px";
             y.style.left = "50px";
             z.style.left = "110px";
         }
-        function login(){
+        function laboratory_signup(){
             x.style.left = "50px";
             y.style.left = "450px";
             z.style.left = "0";
